@@ -1,14 +1,8 @@
 App.IndexController = Ember.ObjectController.extend({
 
-  startEditing: function() {
-    // create a new record on a local transaction
-    this.transaction = this.get('store').transaction();
-    this.set('content', this.transaction.createRecord(App.User));
-  },
-
   submit: function(user){
     console.log("submitting!");
-    this.transaction.commit();
+    this.get('content').get('transaction').commit();
   },
 
   _transitionOnSuccess: function(stuff) {
@@ -17,4 +11,5 @@ App.IndexController = Ember.ObjectController.extend({
       this.transitionToRoute('success');
     }
   }.observes('content.id')
+
 });

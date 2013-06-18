@@ -153,7 +153,7 @@ DEPENDENCIES
   ember-rails
   ember-source (= 1.0.0.rc5)
   haml-rails
-  handlebars-source (= 1.0.0.rc4)
+  handlebars-source (~> 1.0.0.rc4)
   jquery-rails
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)

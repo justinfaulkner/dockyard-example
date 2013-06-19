@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
-gem "handlebars-source", "~> 1.0.0.rc4"
 gem 'ember-rails'
+gem "handlebars-source", "~> 1.0.0.rc4"
 gem 'ember-source', '1.0.0.rc5'
 gem 'ember-data-source', '0.13'
 

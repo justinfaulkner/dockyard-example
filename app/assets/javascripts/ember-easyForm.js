@@ -1,9 +1,9 @@
-// Last commit: e557458 (2013-06-03 15:29:42 -0700)
+// Last commit: e9aaa76 (2013-06-26 10:31:07 -0300)
 
 
 (function() {
 Ember.EasyForm = Ember.Namespace.create({
-  VERSION: '0.3.1'
+  VERSION: '0.3.2'
 });
 
 })();
@@ -355,7 +355,7 @@ Ember.EasyForm.Input = Ember.EasyForm.BaseView.extend({
   },
   errorField: function() {
     var options = '';
-    return '{{#if errors.' + this.property + '}}{{{errorField '+this.property+' '+options+'}}{{/if}}';
+    return '{{#if errors.' + this.property + '}}{{errorField '+this.property+' '+options+'}}{{/if}}';
   },
   hintField: function() {
     var options = this.hint ? 'text="'+this.hint+'"' : '';
